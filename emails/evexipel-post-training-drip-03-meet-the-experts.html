@@ -23,6 +23,7 @@
 		@media (max-width:620px) {
 			.email-container { width: 100% !important; }
 			.padding-mobile { padding-left: 20px !important; padding-right: 20px !important; }
+			.hero-cell { height: auto !important; background-size: cover !important; }
 			.stack-card { display: block !important; width: 100% !important; max-width: 100% !important; padding: 0 0 16px 0 !important; }
 			.stack-column { display: block !important; width: 100% !important; max-width: 100% !important; }
 			.stack-center { text-align: center !important; }
@@ -51,26 +52,28 @@
 
 				<table role="presentation" width="600" border="0" cellpadding="0" cellspacing="0" class="email-container" bgcolor="#ffffff" style="margin: 0 auto; background-color: #ffffff;">
 
-					<!-- HERO (animated GIF, logo baked in) -->
+					<!-- HERO (animated GIF as background, intro card straddles bottom edge) -->
 					<tr>
-						<td bgcolor="#70bf44" style="background-color: #70bf44; padding: 0; font-size: 0; line-height: 0;">
-							<a href="https://evexias.kinsta.cloud/evexipel-training-details" target="_blank">
-								<img src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-hero.gif" width="600" alt="EvexiPEL Training" style="display: block; width: 100%; max-width: 600px; height: auto;">
-							</a>
-						</td>
-					</tr>
-
-					<!-- INTRO NAVY CARD -->
-					<tr>
-						<td class="padding-mobile" style="padding: 36px 40px 8px;">
-							<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1d447d" style="background-color: #1d447d; border-radius: 16px;">
+						<td background="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-hero.gif" bgcolor="#ffffff" valign="bottom" class="hero-cell" style="background-image: url('https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-hero.gif'); background-repeat: no-repeat; background-size: 100% auto; background-position: top center; background-color: #ffffff; height: 990px;">
+							<!--[if gte mso 9]>
+							<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:990px;">
+							<v:fill type="frame" src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-hero.gif" color="#70bf44" />
+							<v:textbox inset="0,0,0,0"><div><![endif]-->
+							<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
 								<tr>
-									<td style="padding: 32px 34px; text-align: center;">
-										<p class="intro-head" style="margin: 0 0 14px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 30px; line-height: 36px; color: #ec8223; font-weight: 700;">Hi {{{RECIPIENT.FIRSTNAME}}},</p>
-										<p style="margin: 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 17px; line-height: 26px; color: #ffffff; font-weight: 700;">EvexiPEL Training is led by experienced clinicians and industry leaders who bring real-world insight, deep clinical expertise, and practical guidance you can apply immediately.</p>
+									<td class="padding-mobile" style="padding: 0 64px;">
+										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1d447d" style="background-color: #1d447d; border-radius: 16px;">
+											<tr>
+												<td style="padding: 30px 30px; text-align: center;">
+													<p class="intro-head" style="margin: 0 0 12px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 27px; line-height: 33px; color: #ec8223; font-weight: 700;">Hi {{{RECIPIENT.FIRSTNAME}}},</p>
+													<p style="margin: 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 15px; line-height: 24px; color: #ffffff; font-weight: 700;">EvexiPEL Training is led by experienced clinicians and industry leaders who bring real-world insight, deep clinical expertise, and practical guidance you can apply immediately.</p>
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
 							</table>
+							<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
 						</td>
 					</tr>
 
@@ -81,51 +84,83 @@
 						</td>
 					</tr>
 
-					<!-- EXPERT CARDS 2x2 -->
+					<!-- EXPERT CARDS 2x2 (text overlaid on card artwork) -->
 					<tr>
 						<td class="padding-mobile" style="padding: 20px 34px 8px;">
 							<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
 								<tr>
 									<td class="stack-card" valign="top" width="50%" style="padding: 0 8px 16px;">
-										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#0e9497" style="background-color: #0e9497; border-radius: 12px;">
-											<tr><td style="padding: 0; font-size: 0; line-height: 0;"><img src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-dan.png" width="252" alt="Dan DeNeui" style="display: block; width: 100%; height: auto;"></td></tr>
-											<tr><td style="padding: 0 14px 20px; text-align: center;">
-												<p style="margin: 0 0 2px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #ffffff; font-weight: 700;">Dan DeNeui</p>
-												<p style="margin: 0 0 14px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">CEO, EVEXIAS Health Solutions</p>
-												<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td bgcolor="#1d447d" style="border-radius: 20px; background-color: #1d447d;"><a href="https://www.evexias.com/dan-deneui/" target="_blank" style="display: inline-block; padding: 10px 24px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 20px;">View Full Bio</a></td></tr></table>
-											</td></tr>
+										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td background="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-dan.png" bgcolor="#0e9497" valign="bottom" align="center" style="background-image: url('https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-dan.png'); background-size: cover; background-position: top center; background-color: #0e9497; border-radius: 12px; height: 466px;">
+													<!--[if gte mso 9]>
+													<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:250px;height:466px;">
+													<v:fill type="frame" src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-dan.png" color="#0e9497" />
+													<v:textbox inset="0,0,0,0"><div><![endif]-->
+													<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" valign="bottom" style="padding: 300px 12px 20px;">
+														<p style="margin: 0 0 2px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #ffffff; font-weight: 700;">Dan DeNeui</p>
+														<p style="margin: 0 0 12px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">CEO, EVEXIAS Health Solutions</p>
+														<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td bgcolor="#1d447d" style="border-radius: 18px; background-color: #1d447d;"><a href="https://www.evexias.com/dan-deneui/" target="_blank" style="display: inline-block; padding: 9px 22px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 18px;">View Full Bio</a></td></tr></table>
+													</td></tr></table>
+													<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+												</td>
+											</tr>
 										</table>
 									</td>
 									<td class="stack-card" valign="top" width="50%" style="padding: 0 8px 16px;">
-										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#0e9497" style="background-color: #0e9497; border-radius: 12px;">
-											<tr><td style="padding: 0; font-size: 0; line-height: 0;"><img src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-terri.png" width="252" alt="Dr. Terri DeNeui" style="display: block; width: 100%; height: auto;"></td></tr>
-											<tr><td style="padding: 0 14px 20px; text-align: center;">
-												<p style="margin: 0 0 2px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #ffffff; font-weight: 700;">Dr. Terri DeNeui</p>
-												<p style="margin: 0 0 14px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">DNP, APRN, ACNP-BC</p>
-												<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td bgcolor="#1d447d" style="border-radius: 20px; background-color: #1d447d;"><a href="https://www.evexias.com/medical-advisory-board-and-training-faculty/terri-deneui-dnp-aprn-acnp-bc/" target="_blank" style="display: inline-block; padding: 10px 24px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 20px;">View Full Bio</a></td></tr></table>
-											</td></tr>
+										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td background="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-terri.png" bgcolor="#0e9497" valign="bottom" align="center" style="background-image: url('https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-terri.png'); background-size: cover; background-position: top center; background-color: #0e9497; border-radius: 12px; height: 466px;">
+													<!--[if gte mso 9]>
+													<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:250px;height:466px;">
+													<v:fill type="frame" src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-terri.png" color="#0e9497" />
+													<v:textbox inset="0,0,0,0"><div><![endif]-->
+													<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" valign="bottom" style="padding: 300px 12px 20px;">
+														<p style="margin: 0 0 2px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #ffffff; font-weight: 700;">Dr. Terri DeNeui</p>
+														<p style="margin: 0 0 12px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">DNP, APRN, ACNP-BC</p>
+														<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td bgcolor="#1d447d" style="border-radius: 18px; background-color: #1d447d;"><a href="https://www.evexias.com/medical-advisory-board-and-training-faculty/terri-deneui-dnp-aprn-acnp-bc/" target="_blank" style="display: inline-block; padding: 9px 22px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 18px;">View Full Bio</a></td></tr></table>
+													</td></tr></table>
+													<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+												</td>
+											</tr>
 										</table>
 									</td>
 								</tr>
 								<tr>
 									<td class="stack-card" valign="top" width="50%" style="padding: 0 8px 16px;">
-										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#0e9497" style="background-color: #0e9497; border-radius: 12px;">
-											<tr><td style="padding: 0; font-size: 0; line-height: 0;"><img src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-cassie.png" width="252" alt="Dr. Cassie Smith" style="display: block; width: 100%; height: auto;"></td></tr>
-											<tr><td style="padding: 0 14px 20px; text-align: center;">
-												<p style="margin: 0 0 2px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #ffffff; font-weight: 700;">Dr. Cassie Smith</p>
-												<p style="margin: 0 0 14px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">MD</p>
-												<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td bgcolor="#1d447d" style="border-radius: 20px; background-color: #1d447d;"><a href="https://www.evexias.com/cassie-smith-md/" target="_blank" style="display: inline-block; padding: 10px 24px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 20px;">View Full Bio</a></td></tr></table>
-											</td></tr>
+										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td background="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-cassie.png" bgcolor="#0e9497" valign="bottom" align="center" style="background-image: url('https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-cassie.png'); background-size: cover; background-position: top center; background-color: #0e9497; border-radius: 12px; height: 466px;">
+													<!--[if gte mso 9]>
+													<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:250px;height:466px;">
+													<v:fill type="frame" src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-cassie.png" color="#0e9497" />
+													<v:textbox inset="0,0,0,0"><div><![endif]-->
+													<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" valign="bottom" style="padding: 300px 12px 20px;">
+														<p style="margin: 0 0 2px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #ffffff; font-weight: 700;">Dr. Cassie Smith</p>
+														<p style="margin: 0 0 12px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">MD</p>
+														<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td bgcolor="#1d447d" style="border-radius: 18px; background-color: #1d447d;"><a href="https://www.evexias.com/cassie-smith-md/" target="_blank" style="display: inline-block; padding: 9px 22px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 18px;">View Full Bio</a></td></tr></table>
+													</td></tr></table>
+													<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+												</td>
+											</tr>
 										</table>
 									</td>
 									<td class="stack-card" valign="top" width="50%" style="padding: 0 8px 16px;">
-										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#0e9497" style="background-color: #0e9497; border-radius: 12px;">
-											<tr><td style="padding: 0; font-size: 0; line-height: 0;"><img src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-johnny.png" width="252" alt="Dr. Johnny Peet" style="display: block; width: 100%; height: auto;"></td></tr>
-											<tr><td style="padding: 0 14px 20px; text-align: center;">
-												<p style="margin: 0 0 2px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #ffffff; font-weight: 700;">Dr. Johnny Peet</p>
-												<p style="margin: 0 0 14px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; line-height: 15px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">MD</p>
-												<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td bgcolor="#1d447d" style="border-radius: 20px; background-color: #1d447d;"><a href="https://www.evexias.com/medical-advisory-board-and-training-faculty/johnny-j-peet-md-facog/" target="_blank" style="display: inline-block; padding: 10px 24px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 20px;">View Full Bio</a></td></tr></table>
-											</td></tr>
+										<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td background="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-johnny.png" bgcolor="#0e9497" valign="bottom" align="center" style="background-image: url('https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-johnny.png'); background-size: cover; background-position: top center; background-color: #0e9497; border-radius: 12px; height: 466px;">
+													<!--[if gte mso 9]>
+													<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:250px;height:466px;">
+													<v:fill type="frame" src="https://raw.githubusercontent.com/dwomack04/evexias-drip-campaign-emails/main/images/o3-card-johnny.png" color="#0e9497" />
+													<v:textbox inset="0,0,0,0"><div><![endif]-->
+													<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="center" valign="bottom" style="padding: 300px 12px 20px;">
+														<p style="margin: 0 0 2px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; color: #ffffff; font-weight: 700;">Dr. Johnny Peet</p>
+														<p style="margin: 0 0 12px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; color: #ffffff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700;">MD</p>
+														<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td bgcolor="#1d447d" style="border-radius: 18px; background-color: #1d447d;"><a href="https://www.evexias.com/medical-advisory-board-and-training-faculty/johnny-j-peet-md-facog/" target="_blank" style="display: inline-block; padding: 9px 22px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; text-decoration: none; border-radius: 18px;">View Full Bio</a></td></tr></table>
+													</td></tr></table>
+													<!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
+												</td>
+											</tr>
 										</table>
 									</td>
 								</tr>
